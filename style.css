@@ -39,6 +39,16 @@ h1 {
     box-shadow: 5px 5px 3px #c5c5c5, -3px -3px 3px #fbfbfb;
 }
 
+.board-container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--colorreset);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
 .board-container>div:active {
     box-shadow: inset 5px 5px 3px #c5c5c5, inset -3px -3px 3px #fbfbfb;
 }
