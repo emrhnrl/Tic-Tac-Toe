@@ -1,0 +1,79 @@
+:root {
+    --colorcontainer: #f0fdfa;
+    --colorboard: #f0fdfa;
+    --colortile: #c2e4db;
+    --colorreset: #3f7265;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--colorreset)
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh);
+    background-color: var(--colorcontainer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: var(--colorreset);
+}
+
+.board-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 8px;
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--colorboard);
+    box-shadow: 5px 5px 3px #c5c5c5, -3px -3px 3px #fbfbfb;
+}
+
+.board-container>div:active {
+    box-shadow: inset 5px 5px 3px #c5c5c5, inset -3px -3px 3px #fbfbfb;
+}
+
+.tile {
+    background-color: var(--colortile);
+}
+
+.reset-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.reset-button {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--colorreset);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
+}
+
+.reset-button:active {
+    position: relative;
+    bottom: 1px;
+}
+
+.reset-button:hover {
+    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color: #dfdfdf;
+
+}
